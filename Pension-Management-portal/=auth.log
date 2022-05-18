@@ -1,0 +1,1 @@
+2022-05-19 00:01:18.653  INFO [PensionManagementPortal,,] 5872 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

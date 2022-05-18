@@ -1,0 +1,54 @@
+<div class="container-fluid p-5">
+    <div class="container">
+        <div class="row card">
+            <div class="col-md-6 offset-md-3">
+                <div class="card-body">
+                    <span class="h2 text-center">Calculate Pension Amt.</span>
+                    <form class="row mt-4" (ngSubmit)="onSubmit()">
+                        <div class="col-6">
+                          <label for="aadhaarnumber" class="visually-hidden">Aadhaar Number</label>
+                          <input type="text" name="aadhaarNumber" [(ngModel)]="credentials.aadhaarNumber" required="" 
+                          #aadhaar="ngModel" class="form-control" id="aadhaarnumber" placeholder="Enter Aadhaar No.">
+                        <small *ngIf="aadhaar.touched && aadhaar.invalid" class="text-danger">
+                            <div *ngIf="aadhaar.errors?.['required']">Aadhaar Number is Required!</div> 
+                        </small>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="submit" class="btn btn-outline-primary" [disabled]="aadhaar.invalid">Calculate Pension</button>
+                                <button type="reset" class="btn btn-outline-dark">Reset</button>
+                              </div>
+                        </div>
+                      </form>
+                    </div>
+            </div>
+        </div>
+</div>
+<div class="row justify-content-center">
+    <div *ngFor="let data of pension" class="card m-3" style="width: 18rem;">
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h6 >Name : <span class="card-title h5">{{data.name}}</span></h6></li>
+            <li class="list-group-item">DOB : {{data.dateOfBirth}}</li>
+            <li class="list-group-item">PAN : {{data.panNumber}}</li>
+          </ul>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item fw-bold">Pension Details :</li>
+            <li class="list-group-item">
+            <table class="table table-striped-columns">
+                <tbody class="fw-semibold font-monospace">
+                <tr><td>Type</td><td>{{data.pensiontype.toUpperCase()}}</td></tr>
+                <tr><td>Amount</td><td class="fw-bolder text-green">₹ {{data.pensionAmount}}/-</td></tr>
+            </tbody>
+            </table>
+        </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+
+
+

@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="container text-center m-5">
+        <h1>Welcome to Pension Management System</h1><br>
+        <a *ngIf="!loggedIn" routerLink="/login" class="btn btn-outline-primary">Login here !!</a>
+    </div>
+    <div class="text-center justify-content-center m-3">
+Login UserName : <b>Admin</b> && Password : <b>admin</b>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="col-md-4 offset-md-4">
+        <div class="card">
+            <div class="card-header">Port Details</div>
+            <div class="card-body">
+                <table class="table table-dark table-striped">
+                    <thead class="fw-semibold">
+                        <tr>
+                            <th>Application</th>
+                            <th>Port</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pension Management Portal</td>
+                            <td>8000</td>
+                        </tr>
+                        <tr>
+                            <td>AuthorizationService</td>
+                            <td>8100</td>
+                        </tr>
+                        <tr>
+                            <td>PensionerDetailService</td>
+                            <td>8200</td>
+                        </tr>
+                        <tr>
+                            <td>ProcessPensionService</td>
+                            <td>8300</td>
+                        </tr>
+                        <tr>
+                            <td>PensionDisburesmentService</td>
+                            <td>8400</td>
+                        </tr>
+                        <tr>
+                            <td>EurekaServer</td>
+                            <td>8761</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

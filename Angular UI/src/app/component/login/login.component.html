@@ -1,0 +1,33 @@
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <span class="card-header">Enter Login Credentials here!</span>
+                <div class="card-body">
+                    <form (ngSubmit)="onSubmit()">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">UserName</label>
+                            <input  [(ngModel)]="credentials.userName" name="username" required
+                            type="text" #control1="ngModel" placeholder="Enter Valid UserName" class="form-control" id="exampleInputEmail1">
+                            <div class="form-text text-danger" *ngIf="control1.touched && control1.invalid">
+                                <span *ngIf="control1.errors?.['required']">UserName is required</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input [(ngModel)]="credentials.password" name="password" type="password" 
+                            class="form-control" id="exampleInputPassword1" placeholder="Enter Valid Password" #control2="ngModel" required="">
+                            <div class="form-text text-danger" *ngIf="control2.touched && control2.invalid">
+                                <span *ngIf="control2.errors?.['required']">Password is required</span>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                          <button type="submit" class="btn btn-primary">Login</button>
+                          <button type="reset" class=" mx-2 btn btn-dark">Reset</button>
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </div>    
+</div>

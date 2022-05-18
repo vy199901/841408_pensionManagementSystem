@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+    <div class="card justify-content-center">
+        <div class="card-header text-center">
+            <span class="fw-bold h2">Disburse Pension</span>
+        </div>
+        <div class="card-body">
+            <form (ngSubmit)="onSubmit()">
+<div class="mb-3">
+<div class="input-group">
+  <span class="input-group-text" id="basic-Aadhaar">Aadhaar Number</span>
+  <input type="text" class="form-control" id="basic-Aadhaar" aria-describedby="basic-Aadhaar" placeholder="Enter Valid Aadhar Number here!"
+  required [(ngModel)]="credentials.aadhaarNumber" name="aadhaarNumber" type="text" #aadhaar="ngModel">
+</div>
+<small class="text-danger" *ngIf="aadhaar.touched && aadhaar.invalid">
+    <span *ngIf="aadhaar.errors?.['required']">Aadhaar Number is Required</span>
+</small>
+</div>
+<div class="mb-3">
+    <div class="input-group">
+      <span class="input-group-text" id="basic-Amount">Pension Amount</span>
+      <input type="number" class="form-control" id="basic-Amount" aria-describedby="basic-Amount" placeholder="Enter Pension Amount as Combination of Bank Charge!"
+      required [(ngModel)]="credentials.pensionAmount" name="pensionAmount" type="number" #amount="ngModel">
+    </div>
+    <small class="text-danger" *ngIf="amount.touched && amount.invalid">
+        <span *ngIf="amount.errors?.['required']">Pension Amount is Required</span>
+    </small>
+</div>
+<div class="mb-3">
+    <div class="input-group">
+      <span class="input-group-text" id="basic-Charge">Bank Charge Amt.</span>
+      <input type="number" class="form-control" id="basic-Charge" aria-describedby="basic-Charge" placeholder="Enter Bank Charge!"
+      required [(ngModel)]="credentials.bankServiceCharge" name="bankServiceCharge" type="number" #charge="ngModel">
+    </div>
+    <small class="text-danger" *ngIf="charge.touched && charge.invalid">
+        <span *ngIf="charge.errors?.['required']">Bank Charge is Required</span>
+    </small>
+</div>
+
+                <div class="card-footer container text-center">
+                    <button type="submit" class="btn btn-outline-success mx-3">Disburse Pension</button>
+                    <button type="reset" class="btn btn-outline-dark">Reset</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div></div>
