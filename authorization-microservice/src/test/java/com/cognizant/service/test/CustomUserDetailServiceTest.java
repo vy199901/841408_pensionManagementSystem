@@ -8,9 +8,9 @@ import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.vivek.model.User;
-import com.vivek.repository.UserRepository;
-import com.vivek.service.CustomUserDetailService;
+import com.vivek.pms.authorizationservice.model.User;
+import com.vivek.pms.authorizationservice.repository.UserRepository;
+import com.vivek.pms.authorizationservice.service.UserDetailService;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
@@ -25,7 +25,7 @@ public class CustomUserDetailServiceTest {
 	private UserRepository userRepository;
 
 	@InjectMocks
-	private CustomUserDetailService service;
+	private UserDetailService service;
 	
 	
 	@BeforeEach

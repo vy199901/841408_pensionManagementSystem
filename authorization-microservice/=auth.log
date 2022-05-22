@@ -1,1 +1,0 @@
-2022-05-19 00:01:47.987  INFO [AuthorizationService,,] 6120 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

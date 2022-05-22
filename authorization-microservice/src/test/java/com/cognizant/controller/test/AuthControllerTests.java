@@ -11,8 +11,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.vivek.controller.AuthorizationController;
-import com.vivek.model.AuthRequest;
+import com.vivek.pms.authorizationservice.controller.AuthorizationController;
+import com.vivek.pms.authorizationservice.model.AuthRequest;
 
 @SpringBootTest(classes = AuthorizationController.class)
 @AutoConfigureMockMvc

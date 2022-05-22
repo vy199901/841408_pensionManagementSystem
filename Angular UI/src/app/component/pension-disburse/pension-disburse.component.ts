@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/services/login.service';
 import { PensionerServiceService } from 'src/app/services/pensioner-service.service';
 import Swal from 'sweetalert2';
 
@@ -8,42 +9,27 @@ import Swal from 'sweetalert2';
   styleUrls: ['./pension-disburse.component.css']
 })
 export class PensionDisburseComponent implements OnInit {
-  credentials={
-    aadhaarNumber:'',
-    pensionAmount:null,
-    bankServiceCharge:null,
-  }
-  result:any;
 
-  constructor(private pensionService:PensionerServiceService) { }
+  transactionList=[{
+    aadhaarNumber:"",
+    transactionAmount:"",
+    accountNumber:"",
+    transactionTimestamp:"",
+  }];
+
+  constructor(private loginService:LoginService) { }
 
   ngOnInit(): void {
+    this.getTransaction();
   }
-  onSubmit()
-  {
-    this.pensionService.processPension(this.credentials).subscribe(
-      (data:any)=>
-      {
-        console.log(data);
-        
-        this.result=Object.values(data);
 
-        if(this.result==10)
-        {
-          Swal.fire('Congratualtions!', 'Pension successfully disbursed!', 'success');
-        }
-        if(this.result==21)
-        {
-          Swal.fire('Error!', "Pension can't be disbursed!", 'error');
-        }
-      },
-      error=>
-      {
-        Swal.fire('Error!', "Please provide Valid Details!", 'error');
-        console.log(error);
-        
+  private getTransaction()
+  {
+    this.loginService.getTransactionList().subscribe(
+      data=>{
+        this.transactionList=data;
+        console.log(this.transactionList);
       }
     );
   }
-
 }

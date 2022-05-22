@@ -12,9 +12,9 @@ export class PensionerListComponent implements OnInit {
     aadhaarNumber:"",
     name:"",
     dateOfBirth:"",
-    panNumber:"",
-    salary:null,
-    allowance:null,
+    pan:"",
+    salaryEarned:null,
+    allowances:null,
     pensionType:"",
   }];
 
@@ -33,6 +33,5 @@ export class PensionerListComponent implements OnInit {
       }
     );
   }
-  
 
 }

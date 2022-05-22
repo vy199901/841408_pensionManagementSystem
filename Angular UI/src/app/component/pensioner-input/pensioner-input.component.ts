@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PensionDetail } from 'src/app/PensionDetail';
+import { PensionResponse } from 'src/app/PensionDetail';
 import { PensionerServiceService } from 'src/app/services/pensioner-service.service';
 import Swal from 'sweetalert2';
 
@@ -15,11 +15,24 @@ export class PensionerInputComponent implements OnInit {
   }
   result:any;
 
-  pension:PensionDetail[]=[];
+  pension:PensionResponse[]=[];
 
   constructor(private pensionService:PensionerServiceService) { }
 
   ngOnInit(): void {
+  }
+
+  processPension(){
+    console.log("Processing Pension")
+    this.pensionService.processPension(this.pension[0]).subscribe(
+      complete=>{
+        Swal.fire('Congratualtions!', 'Pension successfully disbursed!', 'success');
+      },
+      error=>{
+        Swal.fire('Error!', "Pension can't be disbursed!", 'error');
+      }
+    );
+
   }
 
   onSubmit()
@@ -27,6 +40,7 @@ export class PensionerInputComponent implements OnInit {
     this.pensionService.getPensionDetail(this.credentials).subscribe(
       (pensiondetail:any)=>
       {
+        this.pension=[]
         this.pension.push(pensiondetail);
       },
       error=>
@@ -34,10 +48,8 @@ export class PensionerInputComponent implements OnInit {
         Swal.fire('Invalid!','Invalid Details','error');  
         console.log(this.credentials);
         console.log(error);
-        
       }
     );
-      
   }
 
 }

@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, ɵsetCurrentInjector } from '@angular/core';
 import { API_URL } from '../app.constant';
 
 @Injectable({
@@ -14,8 +14,14 @@ export class PensionerServiceService {
     return this.http.post( `${API_URL}/pensionDetail`,credentials);
   }
 
-  processPension(credentials:any)
+  processPension(pension:any)
   {
-    return this.http.post(`${API_URL}/processPension`,credentials);
+    const transactionDetail={
+      aadhaarNumber:pension.pensionerDetail.aadhaarNumber,
+      transactionAmount:pension.pensionAmount-pension.bankCharge,
+      accountNumber:pension.pensionerDetail.bankDetail.accountNumber,
+      transactionTimestamp:new Date()
+  };
+    return this.http.post(`${API_URL}/processPension`,transactionDetail);
   }
 }

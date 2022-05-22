@@ -20,10 +20,10 @@
                                 <a class="dropdown-item" *ngIf="loggedIn" routerLink="/pensionerlist" routerLinkActive="bg-light text-dark fw-bold">Pensioner List</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" *ngIf="loggedIn" routerLink="/pensionCalculation" routerLinkActive="bg-light text-dark fw-bold">Calculate Pension</a>
+                              <a class="dropdown-item" *ngIf="loggedIn" routerLink="/disbursePension" routerLinkActive="bg-light text-dark fw-bold">Transaction List</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" *ngIf="loggedIn" routerLink="/disbursePension" routerLinkActive="bg-light text-dark fw-bold">Disburse Pension</a>
+                                <a class="dropdown-item" *ngIf="loggedIn" routerLink="/pensionCalculation" routerLinkActive="bg-light text-dark fw-bold">Calculate Pension</a>
                             </li>
 
                             <li><a class="dropdown-item" (click)="logoutUser()">Logout</a></li>

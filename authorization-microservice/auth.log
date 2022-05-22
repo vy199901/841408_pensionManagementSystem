@@ -1,0 +1,87 @@
+2022-05-23 00:02:30.462  INFO [authorization-service,f6d8e370c3ea01d9,f6d8e370c3ea01d9] 8676 --- [http-nio-8100-exec-5] c.v.p.a.c.AuthorizationController        : START - generateToken
+2022-05-23 00:02:30.765  INFO [authorization-service,f6d8e370c3ea01d9,f6d8e370c3ea01d9] 8676 --- [http-nio-8100-exec-5] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:02:30.767  INFO [authorization-service,f6d8e370c3ea01d9,f6d8e370c3ea01d9] 8676 --- [http-nio-8100-exec-5] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:02:30.767  INFO [authorization-service,f6d8e370c3ea01d9,f6d8e370c3ea01d9] 8676 --- [http-nio-8100-exec-5] c.v.p.a.c.AuthorizationController        : END - generateToken
+2022-05-23 00:02:41.416  INFO [authorization-service,f0aad1306ef0d7e2,f0aad1306ef0d7e2] 8676 --- [http-nio-8100-exec-9] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:02:41.421  INFO [authorization-service,f0aad1306ef0d7e2,f0aad1306ef0d7e2] 8676 --- [http-nio-8100-exec-9] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:02:41.428  INFO [authorization-service,f0aad1306ef0d7e2,f0aad1306ef0d7e2] 8676 --- [http-nio-8100-exec-9] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:02:41.428  INFO [authorization-service,f0aad1306ef0d7e2,f0aad1306ef0d7e2] 8676 --- [http-nio-8100-exec-9] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:02:41.431  INFO [authorization-service,f0aad1306ef0d7e2,f0aad1306ef0d7e2] 8676 --- [http-nio-8100-exec-9] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:02:41.433  INFO [authorization-service,f0aad1306ef0d7e2,f0aad1306ef0d7e2] 8676 --- [http-nio-8100-exec-9] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:02:41.492  INFO [authorization-service,28280ef5d0ba6e3e,28280ef5d0ba6e3e] 8676 --- [http-nio-8100-exec-10] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:02:41.494  INFO [authorization-service,28280ef5d0ba6e3e,28280ef5d0ba6e3e] 8676 --- [http-nio-8100-exec-10] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:02:41.497  INFO [authorization-service,28280ef5d0ba6e3e,28280ef5d0ba6e3e] 8676 --- [http-nio-8100-exec-10] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:02:41.498  INFO [authorization-service,28280ef5d0ba6e3e,28280ef5d0ba6e3e] 8676 --- [http-nio-8100-exec-10] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:02:41.500  INFO [authorization-service,28280ef5d0ba6e3e,28280ef5d0ba6e3e] 8676 --- [http-nio-8100-exec-10] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:02:41.502  INFO [authorization-service,28280ef5d0ba6e3e,28280ef5d0ba6e3e] 8676 --- [http-nio-8100-exec-10] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:02:43.355  INFO [authorization-service,66664aea31c9a716,66664aea31c9a716] 8676 --- [http-nio-8100-exec-1] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:02:43.356  INFO [authorization-service,66664aea31c9a716,66664aea31c9a716] 8676 --- [http-nio-8100-exec-1] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:02:43.359  INFO [authorization-service,66664aea31c9a716,66664aea31c9a716] 8676 --- [http-nio-8100-exec-1] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:02:43.359  INFO [authorization-service,66664aea31c9a716,66664aea31c9a716] 8676 --- [http-nio-8100-exec-1] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:02:43.363  INFO [authorization-service,66664aea31c9a716,66664aea31c9a716] 8676 --- [http-nio-8100-exec-1] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:02:43.364  INFO [authorization-service,66664aea31c9a716,66664aea31c9a716] 8676 --- [http-nio-8100-exec-1] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:02:43.385  INFO [authorization-service,53fb0fc0374e21bf,53fb0fc0374e21bf] 8676 --- [http-nio-8100-exec-8] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:02:43.386  INFO [authorization-service,53fb0fc0374e21bf,53fb0fc0374e21bf] 8676 --- [http-nio-8100-exec-8] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:02:43.388  INFO [authorization-service,53fb0fc0374e21bf,53fb0fc0374e21bf] 8676 --- [http-nio-8100-exec-8] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:02:43.389  INFO [authorization-service,53fb0fc0374e21bf,53fb0fc0374e21bf] 8676 --- [http-nio-8100-exec-8] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:02:43.389  INFO [authorization-service,53fb0fc0374e21bf,53fb0fc0374e21bf] 8676 --- [http-nio-8100-exec-8] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:02:43.390  INFO [authorization-service,53fb0fc0374e21bf,53fb0fc0374e21bf] 8676 --- [http-nio-8100-exec-8] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:03:49.355  INFO [authorization-service,,] 8676 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-23 00:08:49.357  INFO [authorization-service,,] 8676 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-23 00:13:49.359  INFO [authorization-service,,] 8676 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-23 00:14:07.836  INFO [authorization-service,3781d4a333ec0dee,3781d4a333ec0dee] 8676 --- [http-nio-8100-exec-4] c.v.p.a.c.AuthorizationController        : START - generateToken
+2022-05-23 00:14:07.837  INFO [authorization-service,3781d4a333ec0dee,3781d4a333ec0dee] 8676 --- [http-nio-8100-exec-4] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:14:07.839  INFO [authorization-service,3781d4a333ec0dee,3781d4a333ec0dee] 8676 --- [http-nio-8100-exec-4] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:14:07.840  INFO [authorization-service,3781d4a333ec0dee,3781d4a333ec0dee] 8676 --- [http-nio-8100-exec-4] c.v.p.a.c.AuthorizationController        : END - generateToken
+2022-05-23 00:14:49.532  INFO [authorization-service,0496798ad64352a9,0496798ad64352a9] 8676 --- [http-nio-8100-exec-6] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:14:49.533  INFO [authorization-service,0496798ad64352a9,0496798ad64352a9] 8676 --- [http-nio-8100-exec-6] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:14:49.537  INFO [authorization-service,0496798ad64352a9,0496798ad64352a9] 8676 --- [http-nio-8100-exec-6] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:14:49.538  INFO [authorization-service,0496798ad64352a9,0496798ad64352a9] 8676 --- [http-nio-8100-exec-6] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:14:49.540  INFO [authorization-service,0496798ad64352a9,0496798ad64352a9] 8676 --- [http-nio-8100-exec-6] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:14:49.541  INFO [authorization-service,0496798ad64352a9,0496798ad64352a9] 8676 --- [http-nio-8100-exec-6] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:14:49.560  INFO [authorization-service,81e18d98fb66aed3,81e18d98fb66aed3] 8676 --- [http-nio-8100-exec-2] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:14:49.562  INFO [authorization-service,81e18d98fb66aed3,81e18d98fb66aed3] 8676 --- [http-nio-8100-exec-2] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:14:49.563  INFO [authorization-service,81e18d98fb66aed3,81e18d98fb66aed3] 8676 --- [http-nio-8100-exec-2] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:14:49.564  INFO [authorization-service,81e18d98fb66aed3,81e18d98fb66aed3] 8676 --- [http-nio-8100-exec-2] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:14:49.565  INFO [authorization-service,81e18d98fb66aed3,81e18d98fb66aed3] 8676 --- [http-nio-8100-exec-2] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:14:49.566  INFO [authorization-service,81e18d98fb66aed3,81e18d98fb66aed3] 8676 --- [http-nio-8100-exec-2] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:17:40.045  INFO [authorization-service,50939722256817c2,50939722256817c2] 8676 --- [http-nio-8100-exec-10] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:40.049  INFO [authorization-service,50939722256817c2,50939722256817c2] 8676 --- [http-nio-8100-exec-10] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:40.050  INFO [authorization-service,50939722256817c2,50939722256817c2] 8676 --- [http-nio-8100-exec-10] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:17:40.050  INFO [authorization-service,50939722256817c2,50939722256817c2] 8676 --- [http-nio-8100-exec-10] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:40.051  INFO [authorization-service,50939722256817c2,50939722256817c2] 8676 --- [http-nio-8100-exec-10] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:40.052  INFO [authorization-service,50939722256817c2,50939722256817c2] 8676 --- [http-nio-8100-exec-10] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:17:40.069  INFO [authorization-service,451ff921efbc52c9,451ff921efbc52c9] 8676 --- [http-nio-8100-exec-1] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:40.070  INFO [authorization-service,451ff921efbc52c9,451ff921efbc52c9] 8676 --- [http-nio-8100-exec-1] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:40.075  INFO [authorization-service,451ff921efbc52c9,451ff921efbc52c9] 8676 --- [http-nio-8100-exec-1] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:17:40.076  INFO [authorization-service,451ff921efbc52c9,451ff921efbc52c9] 8676 --- [http-nio-8100-exec-1] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:40.079  INFO [authorization-service,451ff921efbc52c9,451ff921efbc52c9] 8676 --- [http-nio-8100-exec-1] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:40.081  INFO [authorization-service,451ff921efbc52c9,451ff921efbc52c9] 8676 --- [http-nio-8100-exec-1] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:17:40.207  INFO [authorization-service,a3e8770aac27e4f5,a3e8770aac27e4f5] 8676 --- [http-nio-8100-exec-8] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:40.209  INFO [authorization-service,a3e8770aac27e4f5,a3e8770aac27e4f5] 8676 --- [http-nio-8100-exec-8] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:40.211  INFO [authorization-service,a3e8770aac27e4f5,a3e8770aac27e4f5] 8676 --- [http-nio-8100-exec-8] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:17:40.211  INFO [authorization-service,a3e8770aac27e4f5,a3e8770aac27e4f5] 8676 --- [http-nio-8100-exec-8] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:40.213  INFO [authorization-service,a3e8770aac27e4f5,a3e8770aac27e4f5] 8676 --- [http-nio-8100-exec-8] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:40.214  INFO [authorization-service,a3e8770aac27e4f5,a3e8770aac27e4f5] 8676 --- [http-nio-8100-exec-8] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:17:40.231  INFO [authorization-service,b163ea2efe8638fa,b163ea2efe8638fa] 8676 --- [http-nio-8100-exec-3] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:40.233  INFO [authorization-service,b163ea2efe8638fa,b163ea2efe8638fa] 8676 --- [http-nio-8100-exec-3] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:40.234  INFO [authorization-service,b163ea2efe8638fa,b163ea2efe8638fa] 8676 --- [http-nio-8100-exec-3] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:17:40.235  INFO [authorization-service,b163ea2efe8638fa,b163ea2efe8638fa] 8676 --- [http-nio-8100-exec-3] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:40.236  INFO [authorization-service,b163ea2efe8638fa,b163ea2efe8638fa] 8676 --- [http-nio-8100-exec-3] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:40.237  INFO [authorization-service,b163ea2efe8638fa,b163ea2efe8638fa] 8676 --- [http-nio-8100-exec-3] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:17:44.897  INFO [authorization-service,0669e036bc39ea7c,0669e036bc39ea7c] 8676 --- [http-nio-8100-exec-7] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:44.899  INFO [authorization-service,0669e036bc39ea7c,0669e036bc39ea7c] 8676 --- [http-nio-8100-exec-7] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:44.900  INFO [authorization-service,0669e036bc39ea7c,0669e036bc39ea7c] 8676 --- [http-nio-8100-exec-7] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:17:44.901  INFO [authorization-service,0669e036bc39ea7c,0669e036bc39ea7c] 8676 --- [http-nio-8100-exec-7] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:44.903  INFO [authorization-service,0669e036bc39ea7c,0669e036bc39ea7c] 8676 --- [http-nio-8100-exec-7] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:44.905  INFO [authorization-service,0669e036bc39ea7c,0669e036bc39ea7c] 8676 --- [http-nio-8100-exec-7] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:17:44.917  INFO [authorization-service,71d7c10931cc1262,71d7c10931cc1262] 8676 --- [http-nio-8100-exec-4] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:44.918  INFO [authorization-service,71d7c10931cc1262,71d7c10931cc1262] 8676 --- [http-nio-8100-exec-4] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:44.922  INFO [authorization-service,71d7c10931cc1262,71d7c10931cc1262] 8676 --- [http-nio-8100-exec-4] c.v.p.a.c.AuthorizationController        : START - authorization
+2022-05-23 00:17:44.924  INFO [authorization-service,71d7c10931cc1262,71d7c10931cc1262] 8676 --- [http-nio-8100-exec-4] c.v.p.a.service.UserDetailService        : START - loadUserByUsername
+2022-05-23 00:17:44.925  INFO [authorization-service,71d7c10931cc1262,71d7c10931cc1262] 8676 --- [http-nio-8100-exec-4] c.v.p.a.service.UserDetailService        : END - loadUserByUsername
+2022-05-23 00:17:44.926  INFO [authorization-service,71d7c10931cc1262,71d7c10931cc1262] 8676 --- [http-nio-8100-exec-4] c.v.p.a.c.AuthorizationController        : END - authorization
+2022-05-23 00:18:49.360  INFO [authorization-service,,] 8676 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-23 00:23:49.362  INFO [authorization-service,,] 8676 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-23 00:28:49.364  INFO [authorization-service,,] 8676 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-23 00:33:49.365  INFO [authorization-service,,] 8676 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -6,7 +6,7 @@ import org.meanbean.test.BeanTester;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.vivek.model.User;
+import com.vivek.pms.authorizationservice.model.User;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)

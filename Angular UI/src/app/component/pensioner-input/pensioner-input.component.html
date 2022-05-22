@@ -1,4 +1,4 @@
-<div class="container-fluid p-5">
+<div class="container-fluid p-3">
     <div class="container">
         <div class="row card">
             <div class="col-md-6 offset-md-3">
@@ -24,26 +24,63 @@
             </div>
         </div>
 </div>
+
 <div class="row justify-content-center">
-    <div *ngFor="let data of pension" class="card m-3" style="width: 18rem;">
+    <div *ngFor="let data of pension" class="card m-2" style="width: 44rem;">
         <div class="card-body">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><h6 >Name : <span class="card-title h5">{{data.name}}</span></h6></li>
-            <li class="list-group-item">DOB : {{data.dateOfBirth}}</li>
-            <li class="list-group-item">PAN : {{data.panNumber}}</li>
-          </ul>
+            <div class="row">
+                <div class="col-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item fw-bold">Pensioner Details :</li>
+                        <li class="list-group-item">
+                        <table class="table table-striped-columns">
+                            <tbody class="fw-semibold font-monospace">
+                            <tr><td>Name</td><td>{{data.pensionerDetail.name}}</td></tr>
+                            <tr><td>D.O.B</td><td>{{data.pensionerDetail.dateOfBirth}}</td></tr>
+                            <tr><td>PAN</td><td>{{data.pensionerDetail.pan}}</td></tr>
+                            <tr><td>Type</td><td>{{data.pensionerDetail.pensionType.toUpperCase()}}</td></tr>
+                        </tbody>
+                        </table>
+                    </li>
+                        <li class="list-group-item fw-bold">Bank Account Details :</li>
+                        <li class="list-group-item">
+                        <table class="table table-striped-columns">
+                            <tbody class="fw-semibold font-monospace">
+                            <tr><td>Name</td><td>{{data.pensionerDetail.bankDetail.bankName}}</td></tr>
+                            <tr><td>Number</td><td>{{data.pensionerDetail.bankDetail.accountNumber}}</td></tr>
+                            <tr><td>Type</td><td>{{data.pensionerDetail.bankDetail.bankType.toUpperCase()}}</td></tr>
+                        </tbody>
+                        </table>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item fw-bold">Salary Details :</li>
+                        <li class="list-group-item">
+                            <table class="table table-striped-columns">
+                                <tbody class="fw-semibold font-monospace">
+                                <tr><td>Salary Earned</td><td class="fw-bolder text-green">₹ {{data.pensionerDetail.salaryEarned}}/-</td></tr>
+                                <tr><td>Allowances</td><td class="fw-bolder text-green">₹ {{data.pensionerDetail.allowances}}/-</td></tr>
+                            </tbody>
+                            </table>
+                        </li>
+                        <li class="list-group-item fw-bold">Pension Details :</li>
+                        <li class="list-group-item">
+                        <table class="table table-striped-columns">
+                            <tbody class="fw-semibold font-monospace">
+                            <tr><td>Pension Amount</td><td class="fw-bolder text-green">₹ {{data.pensionAmount}}/-</td></tr>
+                            <tr><td>Bank Charge</td><td class="fw-bolder text-green">₹ {{data.bankCharge}}/-</td></tr>
+                        </tbody>
+                        </table>
+                    </li>
+                    </ul>
+                    <div class="card-footer justify-content-end">
+                        <button type="button" (click)="processPension()" class="btn btn-outline-success">Process Pension</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item fw-bold">Pension Details :</li>
-            <li class="list-group-item">
-            <table class="table table-striped-columns">
-                <tbody class="fw-semibold font-monospace">
-                <tr><td>Type</td><td>{{data.pensiontype.toUpperCase()}}</td></tr>
-                <tr><td>Amount</td><td class="fw-bolder text-green">₹ {{data.pensionAmount}}/-</td></tr>
-            </tbody>
-            </table>
-        </li>
-        </ul>
     </div>
 </div>
 </div>

@@ -20,6 +20,11 @@ export class LoginService {
     return this.http.get<[]>(`${API_URL}/details`);
   }
 
+  getTransactionList()
+  {
+    return this.http.get<[]>(`${API_URL}/transactionDetails`);
+  }
+
   loginUser(token:any,credentials:any)
   {
     localStorage.setItem('token',token);
