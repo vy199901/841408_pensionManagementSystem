@@ -45,7 +45,7 @@ public class AuthorizationController {
 	public ResponseEntity<String> welcome() {
 		log.info("START authorization microservice welcome");
 		log.info("END - authorization microservice welcome");
-		return ResponseEntity.ok("Wecome to security application");
+		return ResponseEntity.ok("Welcome to Authorization Microservice");
 	}
 
 	//jwt token authentication using user name and password

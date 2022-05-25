@@ -3,6 +3,7 @@ package com.vivek.pms.pensionerdetail.service;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +35,7 @@ public class PensionerDetailService {
 
 		List<PensionerDetail> pensionerDetailList = new ArrayList<>();
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("src/main/resources/details.csv"));
+			BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/details.csv")));
 			String line = "";
 			while ((line = br.readLine()) != null) {
 				String[] data = line.split(",");

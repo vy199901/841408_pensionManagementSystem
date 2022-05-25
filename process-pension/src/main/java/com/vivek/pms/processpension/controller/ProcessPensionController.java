@@ -1,6 +1,8 @@
 package com.vivek.pms.processpension.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -23,6 +25,13 @@ public class ProcessPensionController {
 	PensionerDetailClient pensionerDetailClient;
 	@Autowired
 	ProcessPensionService processPensionService;
+	
+	@GetMapping("/")
+	public ResponseEntity<String> welcome() {
+		log.info("START Process Pension microservice welcome");
+		log.info("END - Process Pension microservice welcome");
+		return ResponseEntity.ok("Welcome to Process Pension Microservice");
+	}
 	
 	/*
 	 * Generating Pension Amount and Bank Service-Charge from user Input Aadhaar Card

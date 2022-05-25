@@ -1,6 +1,5 @@
 package com.vivek.pms.authorizationservice.config;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,35 +17,20 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-	
-	
+
 	@Bean
-	public Docket api()
-	{
-		return new Docket(DocumentationType.SWAGGER_2)
-				.apiInfo(apiInfo())
-				.select()
-				.apis(RequestHandlerSelectors.any())
-				.paths(paths())
-				.build();
-				
-		
+	public Docket api() {
+		return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select().apis(RequestHandlerSelectors.any())
+				.paths(paths()).build();
 	}
+
 	private ApiInfo apiInfo() {
-        return new ApiInfoBuilder()
-                .title("Swagger APIs")
-                .description("rest apis for authorization-microservice")
-                .version("1.0-SNAPSHOT")
-                .build();
-    
+		return new ApiInfoBuilder().title("Swagger APIs").description("rest apis for authorization-microservice")
+				.version("1.0-SNAPSHOT").build();
 	}
-	
+
 	private Predicate<String> paths() {
-        return Predicates.and(
-        	PathSelectors.regex("/.*"), 
-        	Predicates.not(PathSelectors.regex("/error.*"))
-        );
-    }
-	
+		return Predicates.and(PathSelectors.regex("/.*"), Predicates.not(PathSelectors.regex("/error.*")));
+	}
 
 }

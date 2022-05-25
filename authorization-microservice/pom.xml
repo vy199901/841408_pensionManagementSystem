@@ -159,10 +159,14 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<image>
+						<name>vy199901/pms-${project.artifactId}:${project.version}</name>
+					</image>
+					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
 				</configuration>
 			</plugin>
 		</plugins>
-	<finalName>authorization-microservice</finalName>
+	<finalName>authorization-service</finalName>
 	</build>
 
 </project>
