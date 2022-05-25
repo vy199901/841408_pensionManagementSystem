@@ -25,7 +25,7 @@ import com.vivek.pms.pensionmanagement.restClient.ProcessPensionClient;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins = "*")
 @Slf4j
 public class ManagementController {
 
